@@ -1,0 +1,16 @@
+
+dict1 = {'1': 'a', '2': 'b', '3': 'c'}
+dict2 = {'4': 'd', '5': 'e', '6': 'f'}
+
+# We're creating dict3 by coping values from dict1 then updating about values from dict3:
+
+dict3 = dict1.copy()
+dict3.update(dict2)
+print(f'dict3: {dict3}')
+
+
+# Another method to use a singe expression:
+
+dict4 = {** dict1, **dict2}
+
+print(f'dict4: {dict4}')
